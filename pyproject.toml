@@ -1,6 +1,6 @@
 [project]
 name = "mcp-stock-screener"
-version = "1.0.1"
+version = "1.0.2"
 description = "AI-powered financial analysis system that processes natural language queries and returns structured stock analysis results via MCP"
 requires-python = ">=3.10"
 dependencies = [
@@ -35,8 +35,8 @@ dev = [
 ]
 
 [project.scripts]
-smart-stock-screener = "main:main"
-smart-stock-screener-http = "main_http:main"
+mcp-stock-screener = "main:main"
+mcp-stock-screener-http = "main_http:main"
 
 [build-system]
 requires = ["hatchling"]
