@@ -1,11 +1,11 @@
 [project]
 name = "mcp-stock-screener"
-version = "1.0.0"
+version = "1.0.1"
 description = "AI-powered financial analysis system that processes natural language queries and returns structured stock analysis results via MCP"
 requires-python = ">=3.10"
 dependencies = [
     # MCP SDK and core dependencies
-    "mcp>=1.0.0",
+    "mcp>=1.12.1",
     "pydantic>=2.0.0",
     "pydantic-settings>=2.0.0",
     # Data processing and ML
