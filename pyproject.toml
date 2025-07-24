@@ -1,5 +1,5 @@
 [project]
-name = "smart-stock-screener"
+name = "mcp-stock-screener"
 version = "1.0.0"
 description = "AI-powered financial analysis system that processes natural language queries and returns structured stock analysis results via MCP"
 requires-python = ">=3.10"
