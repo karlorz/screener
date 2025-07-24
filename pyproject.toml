@@ -1,6 +1,6 @@
 [project]
 name = "mcp-stock-screener"
-version = "1.0.2"
+version = "1.0.3"
 description = "AI-powered financial analysis system that processes natural language queries and returns structured stock analysis results via MCP"
 requires-python = ">=3.10"
 dependencies = [
@@ -35,8 +35,8 @@ dev = [
 ]
 
 [project.scripts]
-mcp-stock-screener = "main:main"
-mcp-stock-screener-http = "main_http:main"
+mcp-stock-screener = "src.main:main"
+mcp-stock-screener-http = "src.main_http:main"
 
 [build-system]
 requires = ["hatchling"]
@@ -44,6 +44,13 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src",
+    "/README.md",
+    "/LICENSE",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
